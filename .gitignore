@@ -1,0 +1,34 @@
+# Diretórios de build e binários compilados
+/bin/
+/obj/
+/out/
+/tmp/
+
+# Cache do Go
+/pkg/
+**/*.exe
+**/*.dll
+**/*.so
+**/*.dylib
+
+# Dependências geradas pelo Go
+/go.sum
+/go.work.sum
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+*.iml
+
+# Logs e arquivos temporários
+*.log
+*.swp
+*.swo
+
+# Configurações locais
+.env
+*.local
+
+# Docker & CI/CD
+docker-compose.override.yml
+*.DS_Store
