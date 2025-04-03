@@ -11,8 +11,8 @@ import (
 
 func main() {
 	config.LoadEnv()
-
 	config.ConnectDB()
+	config.RunMigrations()
 
 	app := fiber.New()
 

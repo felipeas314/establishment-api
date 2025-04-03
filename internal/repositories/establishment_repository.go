@@ -11,7 +11,7 @@ import (
 
 // Criar usuário no banco
 func CreateEstablishment(establishment models.Establishment) error {
-	query := `INSERT INTO establishment (name, decription) VALUES ($1, $2)`
+	query := `INSERT INTO establishment (name, description) VALUES ($1, $2)`
 
 	_, err := config.DB.Exec(context.Background(), query, establishment.Name, establishment.Description)
 	if err != nil {
