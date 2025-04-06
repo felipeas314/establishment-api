@@ -11,4 +11,5 @@ func SetupRoutes(app *fiber.App) {
 	api := app.Group("/api")
 	api.Post("/establishment", controllers.CreateEstablishment)
 	api.Get("/establishment", controllers.ListEstablishments)
+	api.Get("/category", controllers.CreateCategory)
 }

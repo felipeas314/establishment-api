@@ -1,6 +1,7 @@
-CREATE TABLE establishment (
+CREATE TABLE category (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   description TEXT NOT NULL,
+  establishment_id INTEGER NOT NULL REFERENCES establishment(id) ON DELETE CASCADE,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
