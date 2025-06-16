@@ -1,4 +1,4 @@
-package usecases
+package usecasesestablishment
 
 import (
 	"establishment/internal/models"

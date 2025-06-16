@@ -3,7 +3,7 @@ package controllers
 
 import (
 	"establishment/internal/models"
-	"establishment/internal/usecases"
+	usecases "establishment/internal/usecases/establishment"
 	"fmt"
 
 	"github.com/gofiber/fiber/v2"

@@ -18,7 +18,6 @@ func main() {
 
 	routes.SetupRoutes(app)
 
-	// ✅ 5. Inicia o servidor
 	port := config.GetEnv("PORT", "8080")
 	log.Fatal(app.Listen(":" + port))
 }
